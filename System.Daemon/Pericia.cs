@@ -5,15 +5,17 @@ namespace System.Daemon
 {
     public class Pericia : IPericia
     {
-        public Pericia(string nome, NomeAtributo? nomeAtributoBase = null, string nomeLimitador = null)
+        public Pericia(string nome, NomeAtributo? nomeAtributoBase = null, string nomeLimitador = null, IAtributo atributoBase = null, IPericia limitador = null, byte incremento = 0)
         {
             Nome = nome;
             NomeAtributoBase = nomeAtributoBase;
             NomeLimitador = nomeLimitador;
+            VincularPericia(atributoBase, limitador, incremento);
         }
 
-        public void VincularPericia(IAtributo atributoBase = null, IPericia limitador = null)
+        public void VincularPericia(IAtributo atributoBase = null, IPericia limitador = null, byte incremento = 0)
         {
+            Incremento = incremento;
             AtributoBase = (atributoBase != null && atributoBase.Nome == NomeAtributoBase.Value) ? atributoBase : throw new RuleException("Atributo incompativel com a pericia");
             Limitador = (limitador != null && limitador.Nome == NomeLimitador) ? limitador : throw new RuleException("Limitador incompativel com a pericia");
         }
