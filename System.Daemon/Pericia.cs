@@ -1,4 +1,3 @@
-using System.Net;
 using System.Daemon.Utils;
 using System.Daemon.Interface;
 
