@@ -4,11 +4,11 @@ namespace System.Daemon.Interface
 {
     public interface ICabecalho
     {
-        string Nome { get; set; }
-        string Sobrenome { get; set; }
-        DateTime DataNascimento { get; set; }
-        string LocalDeNascimento { get; set; }
-        Genero Sexo { get; set; }
+        string Nome { get; }
+        string Sobrenome { get; }
+        DateTime DataNascimento { get; }
+        string LocalDeNascimento { get; }
+        Genero Sexo { get; }
         byte IdadeAparente { get; set; }
         byte IdadeReal { get; set; }
     }

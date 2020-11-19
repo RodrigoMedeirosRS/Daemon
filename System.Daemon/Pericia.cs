@@ -4,7 +4,7 @@ using System.Daemon.Interface;
 namespace System.Daemon
 {
     public class Pericia : IPericia
-    {
+    {        
         public Pericia(string nome, NomeAtributo? nomeAtributoBase = null, string nomeLimitador = null, IAtributo atributoBase = null, IPericia limitador = null, byte incremento = 0)
         {
             Nome = nome;
