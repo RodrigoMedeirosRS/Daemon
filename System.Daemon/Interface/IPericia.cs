@@ -7,5 +7,6 @@ namespace System.Daemon.Interface
         byte Incremento { get; set; }
         IAtributo AtributoBase { get; }
         IPericia Limitador { get; }
+        void VincularPericia(IAtributo atributoBase = null, IPericia limitador = null, byte incremento = 0);
     }
 }
