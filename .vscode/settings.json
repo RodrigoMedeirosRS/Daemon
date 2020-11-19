@@ -1,0 +1,12 @@
+{
+  "files.exclude": {
+    "SistemaDaemon/bin/Debug/netstandard2.0": true,
+    "SistemaDaemon/bin/Debug": true,
+    "SistemaDaemon/bin": true,
+    "SistemaDaemon/obj": true,
+    "System.Daemon/obj": true,
+    "System.Daemon/bin/Debug/netstandard2.0": true,
+    "System.Daemon/bin": true,
+    ".vscode": true
+  }
+}
