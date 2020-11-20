@@ -8,7 +8,7 @@ namespace System.Daemon.Interface
         ICabecalho Descricao { get; set; }
         List<IAtributo> Atributos { get; }
         byte PontosDeVida{ get; set; }
-        byte Iniciativa { get; }
+        int Iniciativa { get; }
         byte IP { get; }
     }
 }

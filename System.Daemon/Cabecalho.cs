@@ -5,16 +5,19 @@ namespace System.Daemon
 {
     public class Cabecalho : ICabecalho
     {
-        public Cabecalho()
+        public Cabecalho(string nome, string sobrenome, DateTime dataNascimento, string localDeNascimento, Genero sexo)
         {
-
+            Nome = nome;
+            Sobrenome = sobrenome;
+            DataNascimento = dataNascimento;
+            LocalDeNascimento = localDeNascimento;
+            Sexo = sexo;
         }
-
-        public string Nome { get; set; }
-        public string Sobrenome { get; set; }
-        public DateTime DataNascimento { get; set; }
-        public string LocalDeNascimento { get; set; }
-        public Genero Sexo { get; set; }
+        public string Nome { get; private set; }
+        public string Sobrenome { get; private set; }
+        public DateTime DataNascimento { get; private set; }
+        public string LocalDeNascimento { get; private set; }
+        public Genero Sexo { get; private set; }
         public byte IdadeAparente { get; set; }
         public byte IdadeReal { get; set; }
     }
