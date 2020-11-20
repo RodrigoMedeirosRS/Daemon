@@ -9,9 +9,11 @@ namespace System.Daemon
         {
             return Convert.ToSingle(Gen.Random.Numbers.Doubles(0.0, 1.0));
         }
-        public int RolarDado(int quantidade, int faces, int modificador)
+        public int RolarDado(byte quantidade, byte faces, int modificador)
         {
             return Gen.Random.Numbers.Integers(quantidade, quantidade * faces)() + modificador;
         }
+
+        
     }
 }

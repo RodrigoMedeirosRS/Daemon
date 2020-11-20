@@ -17,4 +17,11 @@ namespace System.Daemon.Utils
         Masculino,
         Feminino
     }
+
+    public enum Dificuldade
+    {
+        Facil,
+        Normal,
+        Dificil
+    }
 }
