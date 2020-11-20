@@ -4,13 +4,15 @@ namespace System.Daemon
 {
     public class PericiaComArmas : IPericiaComArmas
     {
-        public PericiaComArmas(IPericia ataque, IPericia defesa)
+        public PericiaComArmas(string nome, IPericia ataque, IPericia defesa)
         {
+            Nome = nome;
             Ataque = ataque;
             Defesa = defesa;
         }
         
-        public IPericia Ataque { get; }
-        public IPericia Defesa { get; } 
+        public string Nome { get; private set; }
+        public IPericia Ataque { get; private set; }
+        public IPericia Defesa { get; private set; } 
     }
 }

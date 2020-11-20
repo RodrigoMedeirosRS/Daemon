@@ -1,9 +1,10 @@
 namespace System.Daemon.Interface
 {
-    public interface IArmaBranca
+    public interface IArma : IItem
     {
         IDano Dano { get; }
-        int Iniciativa { get; }
         float Alcance { get; }
+        bool DuasMaos { get; }
+        int Iniciativa { get; }
     }
 }
