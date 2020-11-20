@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wGCHEYLnV4fLBhnQLMe3obt/5+PSUVtccnqWHMzgEqiKlQtO9IVJkFltaAVdUe1hFzYxH4rbPqaehhH5ropaQQ==",
+  "dgSpecHash": "gaoL5x3mSNn8OEHYhaFrrcZ0TFGGH0okDBclrsNR81rxOJQPA2LP1QIczKBcx4V8oQvjiFR25j+gbcOrfOtqEw==",
   "success": true,
-  "projectFilePath": "/home/rmlehnemann/Documentos/Projetos/System.Daemon/System.Daemon/System.Daemon.csproj",
+  "projectFilePath": "C:\\Users\\edmundo\\Documents\\Rodrigo\\Projetos\\System.Daemon\\System.Daemon\\System.Daemon.csproj",
   "expectedPackageFiles": [
-    "/home/rmlehnemann/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "/home/rmlehnemann/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\edmundo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\edmundo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

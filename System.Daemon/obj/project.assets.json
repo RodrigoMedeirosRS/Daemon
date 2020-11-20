@@ -180,24 +180,26 @@
     ]
   },
   "packageFolders": {
-    "/home/rmlehnemann/.nuget/packages/": {}
+    "C:\\Users\\edmundo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/rmlehnemann/Documentos/Projetos/System.Daemon/System.Daemon/System.Daemon.csproj",
+      "projectUniqueName": "c:\\Users\\edmundo\\Documents\\Rodrigo\\Projetos\\System.Daemon\\System.Daemon\\System.Daemon.csproj",
       "projectName": "System.Daemon",
-      "projectPath": "/home/rmlehnemann/Documentos/Projetos/System.Daemon/System.Daemon/System.Daemon.csproj",
-      "packagesPath": "/home/rmlehnemann/.nuget/packages/",
-      "outputPath": "/home/rmlehnemann/Documentos/Projetos/System.Daemon/System.Daemon/obj/",
+      "projectPath": "c:\\Users\\edmundo\\Documents\\Rodrigo\\Projetos\\System.Daemon\\System.Daemon\\System.Daemon.csproj",
+      "packagesPath": "C:\\Users\\edmundo\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\edmundo\\Documents\\Rodrigo\\Projetos\\System.Daemon\\System.Daemon\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/rmlehnemann/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\edmundo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -231,7 +233,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.404/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

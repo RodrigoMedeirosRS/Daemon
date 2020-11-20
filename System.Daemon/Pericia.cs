@@ -30,6 +30,13 @@ namespace System.Daemon
                 return Limitador.Valor < valor ? valor : Limitador.Valor;
             } 
         }
+        public float Teste 
+        { 
+            get
+            {
+                return (Valor * 0.01f);
+            } 
+        }
         public byte Incremento { get; set; }
         public NomeAtributo? NomeAtributoBase { get; private set; }
         public IAtributo AtributoBase { get; private set; }
