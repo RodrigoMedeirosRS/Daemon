@@ -1,0 +1,18 @@
+Joker = Cada jogador na mesa saca uma carta sem revalar, o jogador escolhe duas para ser a sua nova sacada.
+K = Seu valor será igual a 0 + valor da outra carta.
+Q = Saca duas cartas e substitua pelo maior valor numerico.
+J = Saca duas cartas e substitua pelo menor valor numerico.
+10 = Multiplica o valor da outra carta por 10.
+9 = 9
+8 = 8
+7 = 7 
+6 = 6
+5 = 5
+4 = 4
+3 = 3 
+2 = 2
+AS = 1
+
+Joker anula Vantagens e Destavantagens.
+Jogada com Vantagem: Saca 2 cartas posicionais e mais uma terceira e conserva a combinação com o melhor resultado.
+Jogada com Desvantagem: Saca 2 cartas posicionais e mais uma terceira e conserva a combinação com o pior resultado.
