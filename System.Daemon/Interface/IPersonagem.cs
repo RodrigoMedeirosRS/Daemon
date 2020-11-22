@@ -7,8 +7,10 @@ namespace System.Daemon.Interface
         byte Nivel { get; }
         ICabecalho Descricao { get; set; }
         List<IAtributo> Atributos { get; }
-        byte PontosDeVida{ get; set; }
+        byte PontosDeVida { get; set; }
+        byte PontosDeMagia { get; set; }
         int Iniciativa { get; }
         byte IP { get; }
+        byte Sorte { get; }
     }
 }

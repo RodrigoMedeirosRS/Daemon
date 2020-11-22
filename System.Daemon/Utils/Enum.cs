@@ -24,4 +24,12 @@ namespace System.Daemon.Utils
         Normal,
         Dificil
     }
+
+    public enum TipoEfeitoMagico
+    {
+        AumentoDeAtributo,
+        AumentoDeDano,
+        DanoDireto,
+        Protecao
+    }
 }

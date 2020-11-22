@@ -1,3 +1,4 @@
+using System;
 using System.Daemon.Utils;
 using System.Daemon.Interface;
 using System.Collections.Generic;
@@ -73,6 +74,14 @@ namespace System.Daemon
                     ip += armaduras.IP;
                 
                 return ip;
+            }
+        }
+
+        public byte Sorte
+        {
+            get
+            {
+                return Convert.ToByte(Atributos[(int)NomeAtributo.Carisma].Valor * 2);
             }
         } 
 

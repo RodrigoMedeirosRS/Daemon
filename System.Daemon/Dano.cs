@@ -4,7 +4,7 @@ namespace System.Daemon
 {
     public class Dano : Rolagem, IDano
     {
-        public Dano(byte dado, byte quantidade, byte modificador)
+        public Dano(byte quantidade, byte dado,  byte modificador)
         {
             Dado = dado;
             Quantidade = quantidade;
