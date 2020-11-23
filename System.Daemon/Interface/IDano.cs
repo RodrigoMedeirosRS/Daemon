@@ -5,6 +5,7 @@ namespace System.Daemon.Interface
         byte Dado { get; }
         byte Quantidade { get; }
         byte Modificador { get; }
+        byte Bonus { get; set; }
         byte RolarDano(byte ip);
     }
 }

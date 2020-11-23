@@ -73,9 +73,11 @@ namespace System.Daemon
                 foreach(var armaduras in Inventario.ArmaduraEquipada)
                     ip += armaduras.IP;
                 
-                return ip;
+                return ip > BonusIP ? ip : BonusIP;
             }
         }
+
+        public byte BonusIP { get; set; }
 
         public byte Sorte
         {

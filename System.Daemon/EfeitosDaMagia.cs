@@ -1,10 +1,11 @@
 using System.Daemon.Utils;
 using System.Daemon.Interface;
+
 namespace System.Daemon
 {
     public class EfeitosDaMagia : Rolagem, IEfeitosDaMagia
     {
-        public byte AumentoDeAtributo(byte circulo)
+        public byte AlteracaoDeAtributo(byte circulo)
         {
             return Convert.ToByte(circulo * 2);
         }
@@ -43,18 +44,6 @@ namespace System.Daemon
             { 
                 return new Dano(Convert.ToByte(circulo - 2), 6, 0);
             }
-            throw new RuleException("Circulo de magia invalido");
-        }
-        public byte Custo(byte circulo)
-        {
-            if (circulo == 1 || circulo == 2)
-                return 1;
-            if (circulo == 3 || circulo == 4)
-                return 2;
-            if (circulo == 5 || circulo == 6)
-                return 3;
-            if (circulo == 7 || circulo == 8)
-                return 4;
             throw new RuleException("Circulo de magia invalido");
         }
     }

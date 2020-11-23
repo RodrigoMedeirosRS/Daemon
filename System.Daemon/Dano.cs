@@ -9,13 +9,15 @@ namespace System.Daemon
             Dado = dado;
             Quantidade = quantidade;
             Modificador = modificador;
+            Bonus = 0;
         }
         public byte Dado { get; private set; }
         public byte Quantidade { get; private set; }
         public byte Modificador { get; private set; }
+        public byte Bonus { get; set; }
         public byte RolarDano(byte ip)
         {
-            var dano = RolarDado(Quantidade, Dado, Modificador - ip);
+            var dano = RolarDado(Quantidade, Dado, Modificador - ip + Bonus);
             return (dano <= 0) ? (byte)1 : Convert.ToByte(dano);
         }
     }
