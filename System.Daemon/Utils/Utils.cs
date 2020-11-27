@@ -6,5 +6,10 @@ namespace System.Daemon.Utils
         {
             return input ? 1 : 0;
         }
+
+        public static bool IsPair(int var)
+        {
+            return var % 2 == 0;
+        }
     }
 }

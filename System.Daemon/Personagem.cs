@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace System.Daemon
 {
-    public class Personagem : IPersonagem
+    public class Personagem : Rolagem, IPersonagem
     {
         public Personagem(ICabecalho descricaoDoPersonagem)
         {
@@ -18,20 +18,27 @@ namespace System.Daemon
         }
         public byte Nivel { get; private set; }
         public ICabecalho Descricao { get; set; }
-        public List<IAtributo> Atributos { get; private set; }
         public List<IPericia> Pericias { get; set; }
         public List<IPericiaComArmas> PericiaComArmas { get; set; }
         public IInventario Inventario { get; set; }
-        public int Iniciativa 
+        public List<IAtributo> Atributos 
+        { 
+            get 
+            {
+                var atributos = Atributos;
+                var penalidades = ObterPenalidades();
+
+                atributos[(int)NomeAtributo.Agilidade].Valor -= penalidades;
+                atributos[(int)NomeAtributo.Destreza].Valor -= penalidades;
+
+                return atributos;
+            }
+        }
+        public byte Iniciativa 
         { 
             get
             {
-                var penalidades = Inventario.ArmaEquipada != null ? Inventario.ArmaEquipada.Iniciativa : 0;
-
-                foreach(var armaduras in Inventario.ArmaduraEquipada)
-                    penalidades += armaduras.PenalidadeAgilidade;
-
-                return Atributos[(int)NomeAtributo.Agilidade].Valor + penalidades;
+                return Convert.ToByte(Atributos[(int)NomeAtributo.Agilidade].Valor + RolarDado(1, 10));
             }
         }
         private byte _pontosDeVida { get; set; }
@@ -44,9 +51,8 @@ namespace System.Daemon
 
             set
             {
-                var total = Convert.ToByte(((Atributos[(int)NomeAtributo.Forca].Valor + 
-                    Atributos[(int)NomeAtributo.Constituicao].Valor) / 2) + Nivel);
-                    
+                var soma = Atributos[(int)NomeAtributo.Forca].Valor + Atributos[(int)NomeAtributo.Constituicao].Valor;
+                var total = Convert.ToByte(Utils.Utils.IsPair(soma) ? (soma/2) + Nivel : ((soma + 1) /2) + Nivel);
                 _pontosDeVida = value < total ? value : total; 
             }
         }
@@ -91,6 +97,17 @@ namespace System.Daemon
         {
             foreach (var atributo in EnumUtils.GetValues<NomeAtributo>())
                 Atributos.Add(new Atributo(atributo));
+        }
+
+        private byte ObterPenalidades()
+        {
+            byte penalidades = 0;
+
+                foreach(var armaduras in Inventario.ArmaduraEquipada)
+                    if (!armaduras.Escudo)
+                        penalidades -= armaduras.IP;
+            
+            return penalidades;
         }
     }
 }

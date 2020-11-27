@@ -5,6 +5,5 @@ namespace System.Daemon.Interface
         IDano Dano { get; }
         float Alcance { get; }
         bool DuasMaos { get; }
-        int Iniciativa { get; }
     }
 }

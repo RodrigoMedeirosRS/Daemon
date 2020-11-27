@@ -12,7 +12,7 @@ namespace System.Daemon.Interface
         IInventario Inventario { get; set; }
         byte PontosDeVida { get; set; }
         byte PontosDeMagia { get; set; }
-        int Iniciativa { get; }
+        byte Iniciativa { get; }
         byte IP { get; }
         byte BonusIP { get; set; }
         byte Sorte { get; }
