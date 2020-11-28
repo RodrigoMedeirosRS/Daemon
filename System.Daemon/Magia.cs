@@ -7,7 +7,7 @@ namespace System.Daemon
 {
     public class Magia : EfeitosDaMagia, IMagia
     {
-        public virtual void Conjurar(List<Caminho> caminhos, TipoEfeitoMagico efeito, byte circulo, IPersonagem invocador, IPersonagem alvo, NomeAtributo nomeAtributo = 0, bool aumentarAtributo = true)
+        public virtual byte Conjurar(List<Caminho> caminhos, TipoEfeitoMagico efeito, byte circulo, IPersonagem invocador, IPersonagem alvo, NomeAtributo nomeAtributo = 0, bool aumentarAtributo = true, TipoDispercao tipoDispercao = TipoDispercao.Alcance)
         {
             ValidarMagia(caminhos, circulo, invocador);
 
@@ -28,6 +28,8 @@ namespace System.Daemon
                     alvo.BonusIP = Protecao(circulo);
                     break;
             }
+
+            return RolarDado(circulo,6);
         }
 
         private void ValidarMagia(List<Caminho> caminhos, byte circulo, IPersonagem invocador)

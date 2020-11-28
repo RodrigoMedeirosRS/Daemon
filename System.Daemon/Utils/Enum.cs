@@ -1,4 +1,3 @@
-using System.ComponentModel;
 namespace System.Daemon.Utils
 {
     public enum NomeAtributo
@@ -32,6 +31,12 @@ namespace System.Daemon.Utils
         AumentoDeDano,
         DanoDireto,
         Protecao
+    }
+
+    public enum TipoDispercao
+    {
+        Alcance,
+        Area
     }
 
     public enum Caminho

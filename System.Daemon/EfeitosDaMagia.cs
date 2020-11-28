@@ -14,17 +14,17 @@ namespace System.Daemon
             if (circulo > 3)
                 return circulo;
             if (circulo == 3)
-                return Convert.ToByte(RolarDado(1,6,0));
+                return RolarDado(1,6);
             if (circulo == 4)
-                return Convert.ToByte(RolarDado(1,6,2));
+                return RolarDado(1,6,2);
             if (circulo == 5)
-                return Convert.ToByte(RolarDado(2,6,0));
+                return RolarDado(2,6);
             if (circulo == 6)
-                return Convert.ToByte(RolarDado(1,6,2));
+                return RolarDado(1,6,2);
             if (circulo == 7)
-                return Convert.ToByte(RolarDado(3,6,0));
+                return RolarDado(3,6);
             if (circulo == 8)
-                return Convert.ToByte(RolarDado(3,6,2));
+                return RolarDado(3,6,2);
 
             throw new RuleException("Circulo de magia invalido");    
         }
@@ -37,7 +37,7 @@ namespace System.Daemon
             if (circulo == 1)
                 return new Dano(0,0,2);
             if (circulo == 2)
-                return new Dano(1,6,0);
+                return new Dano(1,6);
             if (circulo == 3)
                 return new Dano(1,6,2);
             if (circulo >= 4)

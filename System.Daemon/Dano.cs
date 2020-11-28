@@ -1,10 +1,9 @@
-using System.Diagnostics.Contracts;
 using System.Daemon.Interface;
 namespace System.Daemon
 {
     public class Dano : Rolagem, IDano
     {
-        public Dano(byte quantidade, byte dado,  byte modificador)
+        public Dano(byte quantidade, byte dado,  byte modificador = 0)
         {
             Dado = dado;
             Quantidade = quantidade;

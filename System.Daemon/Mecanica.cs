@@ -1,6 +1,6 @@
-using System.Runtime.InteropServices.ComTypes;
 using System.Daemon.Utils;
 using System.Daemon.Interface;
+
 namespace System.Daemon
 {
     public class Mecanica : Rolagem, IMecanica
