@@ -12,8 +12,6 @@ namespace System.Daemon
         public byte RolarDado(byte quantidade, byte faces, int modificador = 0)
         {
             return Convert.ToByte(Gen.Random.Numbers.Integers(quantidade, quantidade * faces)() + modificador);
-        }
-
-        
+        }  
     }
 }

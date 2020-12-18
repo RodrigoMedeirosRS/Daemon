@@ -1,15 +1,13 @@
-using System.Linq;
 using System.Daemon.Utils;
 using System.Daemon.Interface;
-using System.Collections.Generic;
 
 namespace System.Daemon
 {
     public class Magia : EfeitosDaMagia, IMagia
     {
-        public virtual byte Conjurar(List<Caminho> caminhos, TipoEfeitoMagico efeito, byte circulo, IPersonagem invocador, IPersonagem alvo, NomeAtributo nomeAtributo = 0, bool aumentarAtributo = true, TipoDispercao tipoDispercao = TipoDispercao.Alcance)
+        public virtual byte Conjurar(TipoEfeitoMagico efeito, byte circulo, IPersonagem invocador, IPersonagem alvo, NomeAtributo nomeAtributo = 0, bool aumentarAtributo = true, TipoDispercao tipoDispercao = TipoDispercao.Alcance)
         {
-            ValidarMagia(caminhos, circulo, invocador);
+            ValidarMagia(circulo, invocador);
 
             invocador.PontosDeMagia -= circulo;
 
@@ -32,14 +30,8 @@ namespace System.Daemon
             return RolarDado(circulo,6);
         }
 
-        private void ValidarMagia(List<Caminho> caminhos, byte circulo, IPersonagem invocador)
-        {
-            if (caminhos.Count > 2)
-                throw new RuleException("Só é permitda a combinação de até 2 caminhos elementais.");
-            
-            if (caminhos.Count(cam => cam <= Caminho.Metamagia) > 0 && caminhos.Count > 1)
-                throw new RuleException("Só caminhos elementais podem ser combinados.");
-            
+        private void ValidarMagia(byte circulo, IPersonagem invocador)
+        {          
             if (circulo > 8)
                 throw new RuleException("O circulo máximo de uma magia é 8.");
 

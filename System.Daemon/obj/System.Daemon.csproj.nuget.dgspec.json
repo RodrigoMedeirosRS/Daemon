@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/rmlehnemann/Documentos/Projetos/System.Daemon/System.Daemon/System.Daemon.csproj": {}
+    "/home/rmlehnemann/Projetos/System.Daemon/System.Daemon/System.Daemon.csproj": {}
   },
   "projects": {
-    "/home/rmlehnemann/Documentos/Projetos/System.Daemon/System.Daemon/System.Daemon.csproj": {
+    "/home/rmlehnemann/Projetos/System.Daemon/System.Daemon/System.Daemon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/rmlehnemann/Documentos/Projetos/System.Daemon/System.Daemon/System.Daemon.csproj",
+        "projectUniqueName": "/home/rmlehnemann/Projetos/System.Daemon/System.Daemon/System.Daemon.csproj",
         "projectName": "System.Daemon",
-        "projectPath": "/home/rmlehnemann/Documentos/Projetos/System.Daemon/System.Daemon/System.Daemon.csproj",
+        "projectPath": "/home/rmlehnemann/Projetos/System.Daemon/System.Daemon/System.Daemon.csproj",
         "packagesPath": "/home/rmlehnemann/.nuget/packages/",
-        "outputPath": "/home/rmlehnemann/Documentos/Projetos/System.Daemon/System.Daemon/obj/",
+        "outputPath": "/home/rmlehnemann/Projetos/System.Daemon/System.Daemon/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/rmlehnemann/.nuget/NuGet/NuGet.Config"

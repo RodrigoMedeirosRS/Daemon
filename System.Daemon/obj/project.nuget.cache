@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nS4D3/iwZFSdDGMpFrCrgK+BbndZLwlywqJtNHyfEE6pHRwPNdfWTOiTJUwFIGdIwMCEQ5uQYopIZmJ5MgUF0Q==",
+  "dgSpecHash": "/e+fTN8TiduCQLG5mBzXFh/1l2HHWlSmHVRUe/jNNTgGbfOWLmch4rqcQaiijgv9STeahBL9sTY/sc17IZLK2g==",
   "success": true,
-  "projectFilePath": "/home/rmlehnemann/Documentos/Projetos/System.Daemon/System.Daemon/System.Daemon.csproj",
+  "projectFilePath": "/home/rmlehnemann/Projetos/System.Daemon/System.Daemon/System.Daemon.csproj",
   "expectedPackageFiles": [
     "/home/rmlehnemann/.nuget/packages/microsoft.bcl.asyncinterfaces/1.0.0/microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
     "/home/rmlehnemann/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
