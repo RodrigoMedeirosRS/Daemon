@@ -13,6 +13,6 @@ namespace System.Daemon
         
         public string Nome { get; private set; }
         public IPericia Ataque { get; private set; }
-        public IPericia Defesa { get; private set; } 
+        public IPericia Defesa { get; private set; }
     }
 }

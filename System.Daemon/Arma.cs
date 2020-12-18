@@ -4,13 +4,12 @@ namespace System.Daemon
 {
     public class Arma : IArma
     {
-        public Arma(string nome, byte peso, byte valor, bool duasMaos, IDano dano, int inciativa, float alcance = 0)
+        public Arma(string nome, byte peso, byte valor, bool duasMaos, IDano dano, float alcance = 0)
         {
             Nome = nome;
             Peso = peso;
             Valor = valor;
             Dano = dano;
-            Iniciativa = inciativa;
             Alcance = alcance;
             DuasMaos = duasMaos;
         }
@@ -20,7 +19,6 @@ namespace System.Daemon
         public byte Valor { get; private set; }
         public bool DuasMaos { get; set; }
         public IDano Dano { get; private set; }
-        public int Iniciativa { get; private set; }
         public float Alcance { get; private set; }
     }
 }

@@ -1,10 +1,10 @@
 ![## Sistema Daemon](/sistema-daemon.png)
 
-O Sistema Daemon é o mais antigo sistema de RPG desenvolvido por brasileiros, com mais de 30 suplementos publicados e algumas dezenas de adaptações de filmes, revistas e livros publicadas em net-books ele é ainda hoje lembrando e jogo por RPGistas de longa data.
+O Sistema Daemon é um dos mais antigos sistema de RPG desenvolvido por brasileiros, com mais de 30 suplementos publicados e algumas dezenas de adaptações de filmes, revistas e livros publicadas em net-books ele é ainda hoje lembrando e jogo por RPGistas de longa data.
 
 O Sistema Daemon foi publicado pela primeira vez em 1992, por Marcelo Del Debbio (com o pseudônimo de Erasmus) em um fanzine da Escola Politécnica chamado Politreco, como uma forma de introdução ao RPG. Mais tarde, em 1995, o Sistema entraria pela primeira vez no mercado na forma do livro ARKANUN, publicado pela Trama Editorial.
 
-O tempo passou, e o Arkanun e seus suplementos foram adquiridos pela Editora Daemon, que o rebatizou com o nome de Sistema Daemon (até então, o sistema não tinha um nome fixo e era conhecido como “o Sistema do Arkanun”, “o sistema Só Aventuras”, “O Sistema do Trevas” e assim por diante. 
+O tempo passou, e o Arkanun e seus suplementos foram adquiridos pela Editora Daemon, que o rebatizou com o nome de Sistema Daemon. 
 
 ## System.Daemon
 

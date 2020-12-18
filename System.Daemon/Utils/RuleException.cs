@@ -1,6 +1,3 @@
-using System.Runtime.InteropServices.ComTypes;
-using System;
-
 namespace System.Daemon.Utils
 {
     public class RuleException : Exception

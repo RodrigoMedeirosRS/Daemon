@@ -17,4 +17,25 @@ namespace System.Daemon.Utils
         Masculino,
         Feminino
     }
+
+    public enum Dificuldade
+    {
+        Facil,
+        Normal,
+        Dificil
+    }
+
+    public enum TipoEfeitoMagico
+    {
+        AlteracaoDeAtributo,
+        AumentoDeDano,
+        DanoDireto,
+        Protecao
+    }
+
+    public enum TipoDispercao
+    {
+        Alcance,
+        Area
+    }
 }
