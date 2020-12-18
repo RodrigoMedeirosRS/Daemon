@@ -7,6 +7,10 @@
     "System.Daemon/obj": true,
     "System.Daemon/bin/Debug/netstandard2.0": true,
     "System.Daemon/bin": true,
-    ".vscode": true
+    ".vscode": true,
+    "System.Daemon.Test/bin/Debug/netcoreapp3.1": true,
+    "System.Daemon.Test/bin/Debug": true,
+    "System.Daemon.Test/bin": true,
+    "System.Daemon.Test/obj": true
   }
 }

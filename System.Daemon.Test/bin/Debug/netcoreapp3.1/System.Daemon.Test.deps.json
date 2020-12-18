@@ -1,0 +1,65 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "System.Daemon.Test/1.0.0": {
+        "dependencies": {
+          "System.Daemon": "1.0.0"
+        },
+        "runtime": {
+          "System.Daemon.Test.dll": {}
+        }
+      },
+      "RandomGen/1.1.4": {
+        "dependencies": {
+          "System.Text.Json": "4.6.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/RandomGen.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "System.Text.Json/4.6.0": {},
+      "System.Daemon/1.0.0": {
+        "dependencies": {
+          "RandomGen": "1.1.4"
+        },
+        "runtime": {
+          "System.Daemon.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "System.Daemon.Test/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RandomGen/1.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lLXjivpKpC5v5d04ozCmmc/fRF+fZct8PvrRf3CpcI/BNfnJbe3KpW+SXu1qb/SPSwUsGg4qwNNQiEbtASh9xA==",
+      "path": "randomgen/1.1.4",
+      "hashPath": "randomgen.1.1.4.nupkg.sha512"
+    },
+    "System.Text.Json/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4F8Xe+JIkVoDJ8hDAZ7HqLkjctN/6WItJIzQaifBwClC7wmoLSda/Sv2i6i1kycqDb3hWF4JCVbpAweyOKHEUA==",
+      "path": "system.text.json/4.6.0",
+      "hashPath": "system.text.json.4.6.0.nupkg.sha512"
+    },
+    "System.Daemon/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
